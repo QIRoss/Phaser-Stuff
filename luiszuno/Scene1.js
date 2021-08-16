@@ -2,7 +2,7 @@ class Scene1 extends Phaser.Scene {
   constructor() {
     super("bootGame");
   }
-
+  
   preload(){
     this.load.image("background", "assets/images/background.png");
     this.load.spritesheet("ship", "assets/spritesheets/ship.png",{
@@ -25,7 +25,6 @@ class Scene1 extends Phaser.Scene {
       frameWidth: 16,
       frameHeight: 16
     });
-    // 1.1 load sprite spritesheets
     this.load.spritesheet("player", "assets/spritesheets/player.png",{
       frameWidth: 16,
       frameHeight: 24
@@ -33,7 +32,8 @@ class Scene1 extends Phaser.Scene {
     this.load.spritesheet("beam", "assets/spritesheets/beam.png", {
       frameWidth: 16,
       frameHeight: 16
-    })
+    });
+    this.load.bitmapFont("pixelFont", "assets/font/font.png", "assets/font/font.xml");
   }
 
   create() {
