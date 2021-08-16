@@ -11,5 +11,11 @@ const config = {
         }
     }
 }
+
+const gameSettings = {
+    playerSpeed: 200,
+    maxPowerups: 2,
+    powerUpVel: 50,
+}
   
 const game = new Phaser.Game(config);
